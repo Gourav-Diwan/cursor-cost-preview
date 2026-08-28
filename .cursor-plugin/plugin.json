@@ -1,0 +1,23 @@
+{
+  "name": "cursor-cost-preview",
+  "description": "See a prompt's estimated cost before you send it in Cursor's Composer/Chat, with an optional hard block above a dollar threshold you set. 100% local, zero network calls.",
+  "version": "0.1.0",
+  "author": { "name": "Gourav Diwan", "email": "gourav.diwan@gmail.com" },
+  "homepage": "https://github.com/Gourav-Diwan/cursor-cost-preview",
+  "repository": "https://github.com/Gourav-Diwan/cursor-cost-preview",
+  "license": "MIT",
+  "keywords": ["cost", "budget", "tokens", "estimate", "cursor", "hooks"],
+  "logo": "assets/logo.png",
+  "hooks": "hooks/hooks.json",
+  "skills": "skills/",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "BLOCK_THRESHOLD_USD": {
+        "type": "string",
+        "title": "Block threshold (USD)",
+        "description": "Hard-block a prompt when its estimated cost exceeds this many dollars. Leave at 0 (default) to keep the gate informational-only — it will show an estimate but never block."
+      }
+    }
+  }
+}

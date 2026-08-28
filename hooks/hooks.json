@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "node ./scripts/before-submit-prompt.cjs"
+      }
+    ]
+  }
+}
